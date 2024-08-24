@@ -81,4 +81,36 @@ async def animal(ctx):
             picture = discord.File(f)
     await ctx.send(file=picture)
 
+@bot.command()
+async def contaminacion(ctx):
+    await ctx.send(f"""¡Hola, soy un bot {bot.user}!""")
+    await ctx.send(f'Te voy a hablar un poco sobre la contaminacion')
+    await ctx.send(f'La contaminacion es un gran problema a nivel mundial, muchos paises sufren a diario')
+
+    await ctx.send(f"¿Quieres consejos sobre como combatir la contaminacion? Responde con 'si' o 'no':")
+
+    def check(message):
+        return message.author == ctx.author and message.channel == ctx.channel and message.content in ['sí', 'si', 'no']
+    response = await bot.wait_for('message', check=check)
+    if response:
+        if response.content in ['sí', 'si']:
+            await ctx.send("1. No arrojar basura en los ríos")
+            await ctx.send("2. Dejar de quemar basura")
+            await ctx.send("3. Aprender a reciclar")
+            await ctx.send("4. Disminuir el uso de vehiculos personales como autos o motos")
+            await ctx.send("5. No gastando mas de lo debido")
+        else:
+            await ctx.send("Está bien, pero si alguna vez necesitas consejos, no dudes en preguntar")
+    else:
+        await ctx.send("Lo siento, pero no puedo entender tu respuesta, Intentalo de nuevo")
+    await ctx.send("¿Quieres saber la definicion de contaminacion? Responde con 'si' o 'no':")
+    response1 = await bot.wait_for('message', check=check)
+    if response1:
+        if response1.content in ['sí', 'si']:
+            await ctx.send("presencia de un constituyente, impureza o algún otro elemento indeseable que estropea, corrompe, infecta, inutiliza o degrada un material, cuerpo físico, entorno natural, lugar de trabajo, etc")
+        else:
+            await ctx.send("Está bien, pero si alguna vez necesitas consejos, no dudes en preguntar")
+    else:
+        await ctx.send("Lo siento, pero no puedo entender tu respuesta, Intentalo de nuevo")
+
 bot.run("bot token")
