@@ -1,11 +1,70 @@
 body {
     font-family: Arial,  sans-serif; /* Familia de fuentes */
-    font-size: 11px; /* El tamaño de la fuente principal en el tag <p></p> */
-    background-color: #f0f0f0; /* El color del fondo de la página web */
-    color: #333333; /* El color del texto*/ 
+    font-size: 14px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #0c0720; /* El color del fondo de la página web */
+    color: #ffffff; /* El color del texto*/ 
 }
 h1 {
     color: #00a800; /* El color de la cabecera */
     font-size: 24px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+}
+h2 {
+    color: #FD98FB; /* El color de la cabecera */
+    font-size: 24px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+}
+p {
+    color: #ffffff; /* El color de la cabecera */
+    font-size: 14px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+}
+li {
+    color: #ffffff; /* El color de la cabecera */
+    font-size: 14px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+}
+
+@keyframes color-change1 {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
+h1 {
+    animation: color-change1 3s infinite;
+}
+
+h2 {
+    animation: color-change1 3s infinite;
+}
+
+@keyframes color-change2 {
+    0% {
+      color: rgb(255, 115, 0);
+    }
+  
+    50% {
+      color: rgb(0, 255, 42);
+    }
+  
+    100% {
+      color: rgb(255, 115, 0);
+    }
+}
+
+p {
+    animation: color-change2 3s infinite;
+}
+
+li {
+    animation: color-change2 3s infinite;
 }
