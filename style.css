@@ -1,31 +1,25 @@
-body {
-    font-family: Arial,  sans-serif; /* Familia de fuentes */
-    font-size: 14px; /* El tamaño de la fuente principal en el tag <p></p> */
-    background-color: #0c0720; /* El color del fondo de la página web */
-    color: #ffffff; /* El color del texto*/ 
-}
 h1 {
-    color: #00a800; /* El color de la cabecera */
-    font-size: 24px; /* El tamaño de la fuente de la cabecera */
-    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
-}
-h2 {
-    color: #FD98FB; /* El color de la cabecera */
-    font-size: 24px; /* El tamaño de la fuente de la cabecera */
-    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
-}
-p {
-    color: #ffffff; /* El color de la cabecera */
-    font-size: 14px; /* El tamaño de la fuente de la cabecera */
-    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
-}
-li {
-    color: #ffffff; /* El color de la cabecera */
-    font-size: 14px; /* El tamaño de la fuente de la cabecera */
-    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
-@keyframes color-change1 {
+h2 {
+    font-size: 40px;
+    color: rgb(0, 51, 255);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    font-size: 25px;
+    color:rgb(150, 117, 27);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+@keyframes color-change {
     0% {
       color: blue;
     }
@@ -38,33 +32,13 @@ li {
       color: blue;
     }
 }
-
 h1 {
-    animation: color-change1 3s infinite;
+    animation: color-change 3s infinite;
 }
 
-h2 {
-    animation: color-change1 3s infinite;
-}
-
-@keyframes color-change2 {
-    0% {
-      color: rgb(255, 115, 0);
-    }
-  
-    50% {
-      color: rgb(0, 255, 42);
-    }
-  
-    100% {
-      color: rgb(255, 115, 0);
-    }
-}
-
-p {
-    animation: color-change2 3s infinite;
-}
-
-li {
-    animation: color-change2 3s infinite;
+img {
+    width: 300px; /* Cambia el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
